@@ -2,12 +2,12 @@ package br.pessoal.springdemo;
 
 public class TrackCoach implements Coach {
 
-    private Fortune fortuneService;
+    private FortuneService fortuneService;
 
     public TrackCoach() {
     }
 
-    public TrackCoach(Fortune fortuneService){
+    public TrackCoach(FortuneService fortuneService){
         this.fortuneService = fortuneService;
     }
 

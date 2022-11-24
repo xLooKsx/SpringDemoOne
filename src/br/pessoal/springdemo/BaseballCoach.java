@@ -2,9 +2,9 @@ package br.pessoal.springdemo;
 
 public class BaseballCoach implements Coach {
 
-    private final Fortune fortune;
+    private final FortuneService fortune;
 
-    public BaseballCoach(Fortune fortune) {
+    public BaseballCoach(FortuneService fortune) {
         this.fortune = fortune;
     }
 
