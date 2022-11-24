@@ -1,6 +1,6 @@
 package br.pessoal.springdemo;
 
-public interface Fortune {
+public interface FortuneService {
 
     String getDailyFortune();
 }

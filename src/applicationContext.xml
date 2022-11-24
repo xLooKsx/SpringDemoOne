@@ -14,17 +14,28 @@
 
     <bean id="myCoach"
             class="br.pessoal.springdemo.TrackCoach">
+        <!--injeção do construtor aqui-->
         <constructor-arg ref="fortuneService"/>
     </bean>
 
     <bean id="football"
           class="br.pessoal.springdemo.FootballCoach">
+        <!--injeção do construtor aqui-->
         <constructor-arg ref="fortuneService"/>
     </bean>
 
     <bean id="baseball"
         class="br.pessoal.springdemo.BaseballCoach">
+        <!--njeção do construtor aqui-->
         <constructor-arg ref="fortuneService"/>
+    </bean>
+
+    <bean id="cricketCoach"
+        class="br.pessoal.springdemo.CricketCoach">
+        <!--Injeção usando o setter-->
+        <property name="fortune" ref="fortuneService" />
+        <property name="emailAddress" value="coaches@firelink.com"/>
+        <property name="team" value="undead" />
     </bean>
 </beans>
 
