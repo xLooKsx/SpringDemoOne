@@ -2,13 +2,13 @@ package br.pessoal.springdemo;
 
 public class TrackCoach implements Coach {
 
-    private FortuneService fortuneService;
+    private FortuneService fortune;
 
     public TrackCoach() {
     }
 
     public TrackCoach(FortuneService fortuneService){
-        this.fortuneService = fortuneService;
+        this.fortune = fortuneService;
     }
 
     @Override
@@ -17,7 +17,12 @@ public class TrackCoach implements Coach {
     }
 
     @Override
+    public String getRandomDailyFortune() {
+        return fortune.getARandomFortune();
+    }
+
+    @Override
     public String getDailyFortune() {
-        return this.fortuneService.getDailyFortune();
+        return this.fortune.getDailyFortune();
     }
 }

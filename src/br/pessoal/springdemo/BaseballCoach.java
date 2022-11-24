@@ -14,6 +14,11 @@ public class BaseballCoach implements Coach {
     }
 
     @Override
+    public String getRandomDailyFortune() {
+        return fortune.getARandomFortune();
+    }
+
+    @Override
     public String getDailyFortune() {
         return "Just do It: "+fortune.getDailyFortune();
     }

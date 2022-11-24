@@ -14,6 +14,11 @@ public class FootballCoach implements Coach{
     }
 
     @Override
+    public String getRandomDailyFortune() {
+        return fortune.getARandomFortune();
+    }
+
+    @Override
     public String getDailyFortune() {
         return "Let's do an 7x1 'cause "+fortune.getDailyFortune();
     }

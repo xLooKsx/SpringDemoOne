@@ -16,6 +16,11 @@ public class CricketCoach implements Coach{
     }
 
     @Override
+    public String getRandomDailyFortune() {
+        return fortune.getARandomFortune();
+    }
+
+    @Override
     public String getDailyFortune() {
         return fortune.getDailyFortune();
     }
